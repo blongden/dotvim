@@ -142,9 +142,7 @@ set encoding=utf-8
 
 " snipMate options
 let g:snips_author = "Ben Longden"
-let g:snippets_dir = $HOME . "/.vim/snippets/"
+let g:snippets_dir = $HOME . "/.vim/bundle/snipmate.vim/snippets/"
 
 au BufNewFile,BufRead *.xml set makeprg=xml\ val\ %
 au BufWritePost *.xml :make
-
-set statusline=%{fugitive#statusline()}
