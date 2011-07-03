@@ -1,7 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/ben/Dev/Sites/3663.development.local/public/app/code/core/Mage/Sales/Model/Order'
-let g:netrw_dirhist_2='/Users/ben/Dev/Sites/3663.development.local/public/app/code/local/Idev/OneStepCheckout/Block/Checkout'
-let g:netrw_dirhist_3='/Volumes/3663 Images 1:4:11/images for ibuildings 1:4:11'
-let g:netrw_dirhist_4='/Users/ben/Dev/Sites/3663.development.local/public/app/design/frontend/bfs3663/trading/template/customer/account'
-let g:netrw_dirhist_5='/Users/ben/.vim/bundle/snipmate.vim/plugin'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/ben/Dev/Sites/fdrop.development.local/application'
+let g:netrw_dirhist_2='/Users/ben/Dev/Sites/fdrop.development.local/application/controllers'

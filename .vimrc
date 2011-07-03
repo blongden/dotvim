@@ -30,6 +30,12 @@ filetype indent on
 
 :call LoadTags("phpunit")
 
+" Highlight Searches
+:set highlight=lub
+:map <Leader>s :set hlsearch<CR>
+:map <Leader>S :set nohlsearch<CR>
+:set incsearch
+
 " PHP parser check (CTRL-L)
 :autocmd FileType php noremap <C-L> :!php -l %<CR>
 

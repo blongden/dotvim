@@ -22,3 +22,9 @@
 [submodule "bundle/vim-projectsettings"]
 	path = bundle/vim-projectsettings
 	url = https://github.com/mikesimons/vim-projectsettings.git
+[submodule "bundle/gist-vim"]
+	path = bundle/gist-vim
+	url = https://github.com/mathieue/gist-vim.git
+[submodule "bundle/taglist.vim"]
+	path = bundle/taglist.vim
+	url = https://github.com/wesbaker/taglist.vim.git
