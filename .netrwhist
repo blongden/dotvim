@@ -1,4 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/ben/Dev/Sites/fdrop.development.local/application'
 let g:netrw_dirhist_2='/Users/ben/Dev/Sites/fdrop.development.local/application/controllers'
+let g:netrw_dirhist_3='/Users/ben/vimwiki/diary'
+let g:netrw_dirhist_4='/Users/ben/vimwiki'
+let g:netrw_dirhist_5='/Users/ben'
+let g:netrw_dirhist_6='/Users/ben/Dev/Sites/acne.development.local'
+let g:netrw_dirhist_7='/Users/ben/Dev/Sites/acne.development.local/app'
+let g:netrw_dirhist_8='/Users/ben/Dev/Sites/acne.development.local/app/code/local'

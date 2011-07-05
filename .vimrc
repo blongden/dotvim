@@ -28,8 +28,6 @@ filetype indent on
 :endfunction
 :command! -nargs=1 Ltag :call LoadTags("<args>")
 
-:call LoadTags("phpunit")
-
 " Highlight Searches
 :set highlight=lub
 :map <Leader>s :set hlsearch<CR>
@@ -48,6 +46,7 @@ set mousemodel=extend
 set nobackup nowb noswapfile
 
 " Ruler
+set laststatus=2
 set ruler
 
 " Line numbers
@@ -121,8 +120,7 @@ let Tlist_Use_Right_Window = 1
 "let Tlist_File_Fold_Auto_Close = 1
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Show_One_File = 1
-nnoremap <silent> <F8> :TlistToggle<CR>
-nnoremap <silent> <F7> :!ctags --recurse=yes<CR>
+nnoremap <leader> t :TlistToggle<CR>
 
 set tabstop=4
 set shiftwidth=4
