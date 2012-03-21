@@ -91,6 +91,7 @@ set nohls is magic
 syntax sync minlines=100
 
 set t_Co=256
+set bg=dark
 colorscheme wombat256mod
 
 " project options
