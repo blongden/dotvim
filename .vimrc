@@ -39,6 +39,7 @@ filetype indent on
 :autocmd FileType php noremap <C-L> :!php -l %<CR>
 
 :map! jj <esc>
+imap <C-P> <ESC>:call PhpDoc()<CR>i
 
 " Mouse mode ALL
 set mousemodel=extend

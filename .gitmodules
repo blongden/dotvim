@@ -28,12 +28,15 @@
 [submodule "bundle/taglist.vim"]
 	path = bundle/taglist.vim
 	url = https://github.com/wesbaker/taglist.vim.git
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = https://github.com/wincent/Command-T.git
 [submodule "bundle/DBGp-client"]
 	path = bundle/DBGp-client
 	url = https://github.com/vim-scripts/DBGp-client
+[submodule "bundle/phpdoc.vim"]
+	path = bundle/phpdoc.vim
+	url = https://github.com/vexxor/phpdoc.vim.git
+[submodule "bundle/jinja.vim"]
+	path = bundle/jinja.vim
+	url = https://github.com/atourino/jinja.vim.git
