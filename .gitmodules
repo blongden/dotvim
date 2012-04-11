@@ -37,3 +37,6 @@
 [submodule "bundle/phpdoc.vim"]
 	path = bundle/phpdoc.vim
 	url = https://github.com/vexxor/phpdoc.vim.git
+[submodule "bundle/jinja.git"]
+	path = bundle/jinja.git
+	url = https://github.com/atourino/jinja.vim.git
