@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/ben/Downloads/CGMud/MUDSource/Skills'
-let g:netrw_dirhist_2='/Users/ben/Sites/Shadowglobe/css'
-let g:netrw_dirhist_3='/Users/ben/Sites/silexdev/vendor/silex/silex/src'
-let g:netrw_dirhist_4='/Users/ben/Sites/silexdev/vendor/symfony'
-let g:netrw_dirhist_5='/Users/ben'
-let g:netrw_dirhist_6='/Users/ben/Documents/Builder/build'
