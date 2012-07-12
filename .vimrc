@@ -6,6 +6,8 @@ call pathogen#runtime_append_all_bundles()
 " mapleader
 let mapleader=","
 
+set hidden
+
 " No Vi Compat
 set nocompatible
 
@@ -125,13 +127,10 @@ let Tlist_Exit_OnlyWindow = 1
 let Tlist_Show_One_File = 1
 nnoremap <leader> t :TlistToggle<CR>
 
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set smartindent
-
 au BufRead,BufNewFile *.scss set filetype=scss
 au BufRead,BufNewFile *.tac set filetype=python
+au BufRead,BufNewFile *.twig set filetype=jinja
+au BufRead,BufNewFile *.ss set filetype=html
 
 set nowrap
 
@@ -149,7 +148,11 @@ set encoding=utf-8
 
 " snipMate options
 let g:snips_author = "Ben Longden"
-let g:snippets_dir = $HOME . "/.vim/bundle/snipmate.vim/snippets/"
 
 au BufNewFile,BufRead *.xml set makeprg=xml\ val\ %
 au BufWritePost *.xml :make
+
+set tabstop=4
+set shiftwidth=4
+set smartindent
+set expandtab

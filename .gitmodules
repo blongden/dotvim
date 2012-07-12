@@ -24,10 +24,7 @@
 	url = https://github.com/mikesimons/vim-projectsettings.git
 [submodule "bundle/gist-vim"]
 	path = bundle/gist-vim
-	url = https://github.com/mathieue/gist-vim.git
-[submodule "bundle/taglist.vim"]
-	path = bundle/taglist.vim
-	url = https://github.com/wesbaker/taglist.vim.git
+	url = https://github.com/mattn/gist-vim
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = https://github.com/wincent/Command-T.git
@@ -40,3 +37,15 @@
 [submodule "bundle/jinja.git"]
 	path = bundle/jinja.git
 	url = https://github.com/atourino/jinja.vim.git
+[submodule "bundle/vim-pandoc"]
+	path = bundle/vim-pandoc
+	url = https://github.com/vim-pandoc/vim-pandoc.git
+[submodule "bundle/vim-phpunit"]
+	path = bundle/vim-phpunit
+	url = https://github.com/afternoon/vim-phpunit
+[submodule "bundle/delimitMate.git"]
+	path = bundle/delimitMate.git
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule "bundle/webapi-vim"]
+	path = bundle/webapi-vim
+	url = https://github.com/mattn/webapi-vim
