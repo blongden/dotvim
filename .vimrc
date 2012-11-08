@@ -152,7 +152,18 @@ let g:snips_author = "Ben Longden"
 au BufNewFile,BufRead *.xml set makeprg=xml\ val\ %
 au BufWritePost *.xml :make
 
+au BufRead,BufNewFile *.markdown set wrap linebreak nolist
+
 set tabstop=4
 set shiftwidth=4
 set smartindent
 set expandtab
+
+let g:Powerline_symbols = 'fancy'
+
+function! PresentationMode()
+    colorscheme solarized
+    set bg=light
+    set nolist
+endfunction
+nmap <leader>PR :call PresentationMode()<cr>
