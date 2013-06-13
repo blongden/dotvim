@@ -12,6 +12,7 @@ Bundle 'Lokaltog/powerline'
 Bundle 'SirVer/ultisnips'
 Bundle 'tobyS/pdv'
 Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'jakobwesthoff/whitespacetrail'
 Bundle 'tsaleh/vim-matchit'
@@ -62,3 +63,11 @@ set encoding=utf-8
 
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:snips_author="Ben Longden"
+
+map <leader>t :NERDTreeToggle<CR>
+autocmd vimenter * if !argc() | NERDTree | endif
