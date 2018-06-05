@@ -5,7 +5,6 @@ filetype on                   " required!
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'michalbachowski/vim-wombat256mod'
-Plug 'scrooloose/syntastic'
 Plug 'jakobwesthoff/whitespacetrail'
 Plug 'spf13/vim-autoclose'
 Plug 'vim-scripts/matchit.zip'
@@ -21,6 +20,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'airblade/vim-gitgutter'
+Plug 'w0rp/ale'
 call plug#end()
 
 filetype plugin on
