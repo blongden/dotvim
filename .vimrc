@@ -1,47 +1,37 @@
+set shell=bash
 set nocompatible               " be iMproved
-filetype off                   " required!
+filetype on                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-sensible'
+Plug 'michalbachowski/vim-wombat256mod'
+Plug 'scrooloose/syntastic'
+Plug 'jakobwesthoff/whitespacetrail'
+Plug 'spf13/vim-autoclose'
+Plug 'vim-scripts/matchit.zip'
+Plug 'leshill/vim-json'
+Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-cucumber'
+Plug 'beyondwords/vim-twig'
+Plug 'othree/html5-syntax.vim'
+Plug 'bling/vim-airline'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'airblade/vim-gitgutter'
+call plug#end()
 
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
-Bundle 'michalbachowski/vim-wombat256mod'
-Bundle 'Lokaltog/powerline'
-Bundle 'SirVer/ultisnips'
-Bundle 'tobyS/pdv'
-Bundle 'scrooloose/syntastic'
-Bundle 'scrooloose/nerdtree'
-Bundle 'myusuf3/numbers.vim'
-Bundle 'jakobwesthoff/whitespacetrail'
-Bundle 'tsaleh/vim-matchit'
-Bundle 'spf13/vim-autoclose'
-Bundle 'kien/ctrlp.vim'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'tpope/vim-fugitive'
-Bundle 'godlygeek/tabular'
-Bundle 'leshill/vim-json'
-Bundle 'pangloss/vim-javascript'
-Bundle 'hail2u/vim-css3-syntax'
-Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-cucumber'
-Bundle 'beyondwords/vim-twig'
-Bundle 'spf13/PIV'
-Bundle 'othree/html5-syntax.vim'
-Bundle 'vim-scripts/HTML-AutoCloseTag'
-Bundle 'vim-scripts/indenthtml.vim'
-Bundle 'mattn/zencoding-vim'
+filetype plugin on
 
 colorscheme wombat256mod
-python from powerline.ext.vim import source_plugin; source_plugin()
 set laststatus=2
 set ruler
 syntax on
 
 let mapleader=","
 set history=100
-filetype plugin on
 filetype indent on
 
 set nobackup nowb noswapfile
@@ -59,15 +49,11 @@ set smartindent
 set expandtab
 set number
 set encoding=utf-8
-
+set backspace=indent,eol,start
 
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-let g:snips_author="Ben Longden"
-
-map <leader>t :NERDTreeToggle<CR>
-autocmd vimenter * if !argc() | NERDTree | endif
+autocmd StdinReadPre * let s:std_in=1
+nmap =j :%!python -m json.tool<CR>
+map ; :Files<CR>
