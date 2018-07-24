@@ -21,6 +21,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 filetype plugin on
