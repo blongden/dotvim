@@ -23,6 +23,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'scrooloose/nerdtree'
+Plug 'LokiChaos/vim-tintin'
+Plug 'phpactor/phpactor'
 call plug#end()
 
 filetype plugin on
@@ -52,6 +54,7 @@ set expandtab
 set number
 set encoding=utf-8
 set backspace=indent,eol,start
+set wildignore+=node_modules/**,vendor
 
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
